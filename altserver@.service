@@ -39,6 +39,7 @@ Type=simple
 RemainAfterExit=yes
 User=%I
 ExecStart=/usr/local/bin/AltServer
+ExecStop=pkill -f AltServer
 Restart=on-failure
 RestartSec=10
 
