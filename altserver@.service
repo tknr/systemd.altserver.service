@@ -36,12 +36,12 @@ After=network.target network-online.target
 
 [Service]
 Type=simple
-RemainAfterExit=yes
+#RemainAfterExit=yes
 User=%I
 ExecStart=/usr/local/bin/AltServer
 ExecStop=pkill -f AltServer
-Restart=on-failure
-RestartSec=10
+#Restart=on-failure
+#RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
