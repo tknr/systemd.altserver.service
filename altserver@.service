@@ -45,3 +45,4 @@ ExecStop=pkill -f AltServer
 
 [Install]
 WantedBy=multi-user.target
+
